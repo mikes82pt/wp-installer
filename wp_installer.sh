@@ -79,7 +79,7 @@ sudo chmod 755 -R /var/www/wordpress/
 sudo cp /tmp/wordpress.conf /etc/apache2/sites-available/
 sudo chown root /etc/apache2/sites-available//tmp/wordpress.conf
 sudo chmod 644 /etc/apache2/sites-available//tmp/wordpress.conf
-sudo a2ensite /tmp/wordpress.conf
+sudo a2ensite wordpress.conf
 sudo a2enmod ssl http2 headers rewrite socache_shmcb security2 alias
 
 #This generates a random signature to prevent users knowing the OS for security reasons
